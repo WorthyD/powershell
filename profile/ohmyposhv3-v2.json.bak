@@ -1,0 +1,116 @@
+{
+  "final_space": true,
+  "console_title": true,
+  "console_title_style": "folder",
+  "blocks": [
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "horizontal_offset": 0,
+      "vertical_offset": 0,
+      "segments": [
+        {
+          "type": "path",
+          "style": "diamond",
+          "powerline_symbol": "",
+          "invert_powerline": false,
+          "foreground": "#ffffff",
+          "background": "#ff479c",
+          "leading_diamond": "",
+          "trailing_diamond": "",
+          "properties": {
+            "prefix": "  ",
+            "style": "folder"
+          }
+        },
+        {
+          "type": "angular",
+          "style": "powerline",
+          "powerline_symbol": "\uE0B0",
+          "foreground": "#000000",
+          "background": "#1976d2",
+          "properties": {
+            "prefix": "\uE753"
+          }
+        },
+
+        {
+          "type": "poshgit",
+          "style": "powerline",
+          "powerline_symbol": "",
+          "powerline_symbol": "\uE0B0",
+          "foreground": "#ffffff",
+          "leading_diamond": "",
+          "trailing_diamond": "",
+          "background": "#1c1c1c"
+        },
+        {
+          "type": "ytm",
+          "style": "powerline",
+          "powerline_symbol": "\uE0B0",
+          "foreground": "#ffffff",
+          "background": "#FF0000",
+          "properties": {
+            "playing_icon": "\uE602 ",
+            "paused_icon": "\uF8E3 ",
+            "stopped_icon": "\uF04D ",
+            "api_url": "http://localhost:9863/"
+          }
+        },
+        {
+          "type": "dotnet",
+          "style": "powerline",
+          "powerline_symbol": "",
+          "invert_powerline": false,
+          "foreground": "#ffffff",
+          "background": "#6CA35E",
+          "leading_diamond": "",
+          "trailing_diamond": "",
+          "properties": {
+            "display_version": true,
+            "prefix": "  "
+          }
+        },
+        {
+          "type": "root",
+          "style": "powerline",
+          "powerline_symbol": "",
+          "invert_powerline": false,
+          "foreground": "#ffffff",
+          "background": "#ffff66",
+          "leading_diamond": "",
+          "trailing_diamond": "",
+          "properties": null
+        },
+        {
+          "type":"sysinfo",
+          "powerline_symbol": "\ue0b0",
+          "foreground": "#ffffff",
+          "background": "#8f43f3",
+          "properties": {
+            "precision": 2,
+            "template":" \uf85a {{ round .PhysicalPercentUsed .Precision }}% "
+          },
+          "style":"powerline"
+        },
+        {
+          "type": "exit",
+          "style": "powerline",
+          "powerline_symbol": "",
+          "invert_powerline": false,
+          "foreground": "#ffffff",
+          "background": "#2e9599",
+          "leading_diamond": "",
+          "trailing_diamond": "",
+          "properties": {
+            "always_enabled": true,
+            "color_background": true,
+            "display_exit_code": false,
+            "error_color": "#f1184c",
+            "prefix": " "
+          }
+        }
+      ]
+    }
+  ]
+}
