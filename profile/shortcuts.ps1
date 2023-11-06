@@ -5,6 +5,9 @@ function dev(){
 function xp(){
     explorer .
 }
+function nvimedit(){
+    cd $env:nvimPath
+}
 
 function giteager(){
     git add .
@@ -12,23 +15,19 @@ function giteager(){
     git push
 }
 
-function imagine { cd C:\Users\danie\dev\imagine\vantage-ng-app }
 
 function nuke_node { rimraf .\node_modules} 
-function evilchrome(){
-  &  "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --user-data-dir="C:/Chrome dev session" --disable-web-security  --ignore-certificate-errors  --remote-debugging-port=9222
-}
 
 function foo(){
-   & "C:\Program Files (x86)\foobar2000\foobar2000.exe"
+   & "$env:foobarPath\foobar2000.exe"
 }
 
 function fp(){
-  & "C:\Program Files (x86)\foobar2000\foobar2000.exe" /playpause
+  & "$env:foobarPath\foobar2000.exe" /playpause
 }
 
 function fn(){
-   & "C:\Program Files (x86)\foobar2000\foobar2000.exe" /next
+   & "$env:foobarPath\foobar2000.exe" /next
 }
 
 
