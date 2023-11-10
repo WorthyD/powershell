@@ -7,4 +7,8 @@ if ( $profileRoot -is [string]){
 }
 
 #Backup NVIM
-#backup($env:nvimPath)
+if ( $env:nvimPath -is [string]){ 
+    backup($env:nvimPath)
+} else{
+    Write-Warning "NVIM path not set"
+}
