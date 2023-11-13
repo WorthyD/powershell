@@ -32,4 +32,11 @@ function backupTheThings() {
     }
 
     #backup Obsidian
+    #Backup NVIM
+    if ( $env:obsidianPath -is [string]) { 
+        backup($env:obsidianPath)
+    }
+    else {
+        Write-Warning "Obsidian path not set"
+    }
 }
