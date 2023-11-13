@@ -4,7 +4,7 @@ function backup([string]$backupPath) {
 
     git add .
 
-    $date = GetDate
+    $date = Get-Date
 
     git commit -m "automated backup `date +'$date'`""
 
