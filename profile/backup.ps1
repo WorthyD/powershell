@@ -15,6 +15,7 @@ function backup([string]$backupPath) {
 }
 
 function backupTheThings() {
+    $location = Get-Location
     #Backup User Profile
     if ( $profileRoot -is [string]) { 
         backup($profileRoot)
@@ -39,4 +40,6 @@ function backupTheThings() {
     else {
         Write-Warning "Obsidian path not set"
     }
+
+    Set-Location $location
 }
