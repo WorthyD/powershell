@@ -41,5 +41,7 @@ function backupTheThings() {
         Write-Warning "Obsidian path not set"
     }
 
+    backupPrivate
+
     Set-Location $location
 }
