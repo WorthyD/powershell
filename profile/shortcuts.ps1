@@ -1,38 +1,46 @@
-function dev(){
+function dev() {
     cd $env:devPath
 }
 
-function xp(){
+function xp() {
     explorer .
 }
-function nvimedit(){
+function nvimedit() {
     cd $env:nvimPath
 }
 
-function giteager(){
+function giteager() {
     git add .
     git commit -a -m "Stuff"
     git push
 }
 
 
-function nuke_node { rimraf .\node_modules} 
+function nuke_node { rimraf .\node_modules } 
 
-function foo(){
-   & "$env:foobarPath\foobar2000.exe"
+function foo() {
+    & "$env:foobarPath\foobar2000.exe"
 }
 
-function fp(){
-  & "$env:foobarPath\foobar2000.exe" /playpause
+function fp() {
+    & "$env:foobarPath\foobar2000.exe" /playpause
 }
 
-function fn(){
-   & "$env:foobarPath\foobar2000.exe" /next
+function fpause() {
+    & "$env:foobarPath\foobar2000.exe" /stop
+}
+
+function fn() {
+    & "$env:foobarPath\foobar2000.exe" /next
+}
+
+function winp() {
+    & "C:\Users\jisaaec\OneDrive - J.B. Hunt Transport\Documents\PowerShell\CLEveR.exe" stop
 }
 
 
-function edithost(){
-  	Start-Process code -ArgumentList C:\Windows\System32\drivers\etc\hosts -Verb RunAs
+function edithost() {
+    Start-Process code -ArgumentList C:\Windows\System32\drivers\etc\hosts -Verb RunAs
 }
 
 # function blync-list{

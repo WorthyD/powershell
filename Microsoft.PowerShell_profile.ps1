@@ -35,7 +35,7 @@ Set-PSReadLineOption -EditMode Windows
 
 # Initialize Oh My Posh
 #oh-my-posh --init --shell pwsh --config "$env:USERPROFILE\OneDrive - J.B. Hunt Transport\Documents\PowerShell\ohmyposhv3-v2.json" | Invoke-Expression
-oh-my-posh --init --shell pwsh --config $profileRoot\profile\ohmyposhv3-v2.json | Invoke-Expression
+oh-my-posh --init --shell pwsh --config $profileRoot\profile\ohmyposhv3-v3.json | Invoke-Expression
 
 # Import User scripts
 #Get-ChildItem "$env:USERPROFILE\OneDrive - J.B. Hunt Transport\Documents\PowerShell\profile\*.ps1" | % { . $_ } 
