@@ -1,11 +1,11 @@
 winget install BurntSushi.ripgrep.MSVC
- winget upgrade JanDeDobbeleer.OhMyPosh -s winget
- winget install -e --id=JesseDuffield.lazygit
- winget install Neovim.Neovim
- winget install sharkdp.fd
+winget upgrade JanDeDobbeleer.OhMyPosh -s winget
+winget install -e --id=JesseDuffield.lazygit
+winget install Neovim.Neovim
+winget install sharkdp.fd
 
-  choco install autohotkey
-   choco install autohotkey
-   choco install nvm
-    choco install git
-    choco install oh-my-posh
+choco install autohotkey
+choco install autohotkey
+choco install nvm
+choco install git
+choco install oh-my-posh

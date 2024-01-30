@@ -1,5 +1,4 @@
 # https://ohmyposh.dev/
-
 # https://www.nerdfonts.com/font-downloads -> Caskaydia Cove Nerd Font
 
 $profileRoot = (Get-Item $profile).DirectoryName
@@ -34,11 +33,7 @@ Set-PSReadLineOption -EditMode Windows
 
 
 # Initialize Oh My Posh
-#oh-my-posh --init --shell pwsh --config "$env:USERPROFILE\OneDrive - J.B. Hunt Transport\Documents\PowerShell\ohmyposhv3-v2.json" | Invoke-Expression
 oh-my-posh --init --shell pwsh --config $profileRoot\profile\ohmyposhv3-v3.json | Invoke-Expression
 
 # Import User scripts
-#Get-ChildItem "$env:USERPROFILE\OneDrive - J.B. Hunt Transport\Documents\PowerShell\profile\*.ps1" | % { . $_ } 
 Get-ChildItem "$profileRoot\profile\*.ps1" | % { . $_ } 
-
-# updateBackground

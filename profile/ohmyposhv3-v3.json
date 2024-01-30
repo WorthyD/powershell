@@ -96,24 +96,24 @@
           "background": "#c4002b",
           "template": " \ue753 {{ .Major }} "
         },
-        {
-          "type": "node",
-          "style": "powerline",
-          "powerline_symbol": "\ue0b2",
-          "invert_powerline": true,
-          "foreground": "#ffffff",
-          "background": "#6CA35E",
-          "template": " \ue718 {{.Major}} "
-        },
-        {
-          "type": "npm",
-          "style": "powerline",
-          "powerline_symbol": "\ue0b2",
-          "invert_powerline": true,
-          "foreground": "#ffffff",
-          "background": "#d3504f",
-          "template": " \ue71e {{ .Major }} "
-        },
+        // {
+        //   "type": "node",
+        //   "style": "powerline",
+        //   "powerline_symbol": "\ue0b2",
+        //   "invert_powerline": true,
+        //   "foreground": "#ffffff",
+        //   "background": "#6CA35E",
+        //   "template": " \ue718 {{.Major}} "
+        // },
+        // {
+        //   "type": "npm",
+        //   "style": "powerline",
+        //   "powerline_symbol": "\ue0b2",
+        //   "invert_powerline": true,
+        //   "foreground": "#ffffff",
+        //   "background": "#d3504f",
+        //   "template": " \ue71e {{ .Major }} "
+        // },
         // {
         //   "type": "battery",
         //   "style": "powerline",
