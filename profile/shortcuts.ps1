@@ -9,6 +9,10 @@ function nvimedit() {
     cd $env:nvimPath
 }
 
+function notes() {
+    cd $env:obsidianPath
+}
+
 function giteager() {
     git add .
     git commit -a -m "Stuff"
