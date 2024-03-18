@@ -1,6 +1,4 @@
 function bulkpull() {
-
-
     Get-ChildItem -Directory | ForEach-Object {
         Set-Location  $_
         git pull

@@ -1,4 +1,4 @@
-function updateBackground() {
+function swapBG() {
     $random = Get-ChildItem $profileRoot\profile\backgrounds\ | Get-Random -Count 1 
     $a = Get-Content "$env:rootTerminalPath\settings.json" -raw | ConvertFrom-Json
     $a.profiles.defaults.backgroundImage = $random.ToString()
