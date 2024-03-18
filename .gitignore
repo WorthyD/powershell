@@ -1,3 +1,4 @@
 
 _variables.ps1
 Modules/*
+backup/*

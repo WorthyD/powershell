@@ -11,4 +11,7 @@ if ( $env:nvimPath -is [string]){
     backup($env:nvimPath)
 } else{
     Write-Warning "NVIM path not set"
+    Write-Warning "Profile path not set"
 }
+
+#backup($env:nvimPath)
