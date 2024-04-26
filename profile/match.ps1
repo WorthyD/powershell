@@ -7,8 +7,7 @@ function match() {
 }
 
 function startMatchE2E() {
-    set-location ".\apps\match-e2e\" 
-    npx cy2 open
+    npm run cypress-open
 }
 
 function startMatch() {
