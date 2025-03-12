@@ -21,6 +21,7 @@ function giteager() {
 
 
 function nuke_node { rimraf .\node_modules } 
+function nuke_nx { rimraf .\nx } 
 
 function foo() {
     & "$env:foobarPath\foobar2000.exe"
