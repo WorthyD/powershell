@@ -3,6 +3,9 @@ winget upgrade JanDeDobbeleer.OhMyPosh -s winget
 winget install -e --id=JesseDuffield.lazygit
 winget install Neovim.Neovim
 winget install sharkdp.fd
+winget install Schniz.fnm
+winget install nushell
+
 
 choco install autohotkey
 choco install autohotkey
