@@ -9,6 +9,16 @@ $profileRoot = (Get-Item $profile).DirectoryName
 #Enable Posh-Git
 #Install-Module posh-git
 $env:POSH_GIT_ENABLED = $true
+
+# Start Windows SSH Agent service and add keys
+$sshAgentService = Get-Service ssh-agent -ErrorAction SilentlyContinue
+if ($sshAgentService.Status -ne 'Running') {
+    Start-Service ssh-agent
+}
+
+# Add SSH keys to agent (suppresses output if already added)
+ssh-add 2>$null
+
 Import-Module posh-git
 
 
