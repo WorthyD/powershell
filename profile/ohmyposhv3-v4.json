@@ -11,7 +11,7 @@
       "alignment": "left",
       "segments": [
         {
-          "properties": {
+          "options": {
             "cache_duration": "none"
           },
           "leading_diamond": "\ue0b6",
@@ -23,11 +23,11 @@
           "style": "diamond"
         },
         {
-          "properties": {
-            "cache_duration": "none",
+          "options": {
             "style": "folder"
           },
-          "template": " \uf07b  {{ .Path }} ",
+          "cache": { "duration": "none" },
+          "template": " \uf07b  {{ .Folder }} ",
           "foreground": "#000000",
           "powerline_symbol": "\ue0b0",
           "background": "#2de2e6",
@@ -36,19 +36,19 @@
         },
         {
           "properties": {
-            "cache_duration": "none",
             "fetch_status": true,
             "fetch_upstream_icon": true,
             "mapped_branches": {
               "bug/*": "🐛 ",
-              "feat/*": "\ud83d\ude80 "
+              "feature/*": "\ud83d\ude80 "
             },
             "source": "cli",
             "untracked_modes": {
               "/Users/user/Projects/oh-my-posh/": "no"
             }
           },
-          "template": "{{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \uf0c7 {{ .StashCount }}{{ end }}",
+          "cache": { "duration": "none" },
+          "template": "{{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}",
           "foreground": "#ffffff",
           "powerline_symbol": "\ue0b0",
           "background": "#9700cc",
@@ -62,9 +62,9 @@
           ]
         },
         {
-          "properties": {
-            "always_enabled": true,
-            "cache_duration": "none"
+          "cache": { "duration": "none" },
+          "options": {
+            "always_enabled": true
           },
           "leading_diamond": "<transparent,background>\ue0b0</>",
           "trailing_diamond": "\ue0b4",
@@ -73,9 +73,7 @@
           "background": "#f6019d",
           "type": "exit",
           "style": "diamond",
-          "background_templates": [
-            "{{ if gt .Code 0 }}#f1184c{{ end }}"
-          ]
+          "background_templates": ["{{ if gt .Code 0 }}#f1184c{{ end }}"]
         }
       ]
     },
