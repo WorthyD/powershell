@@ -1,8 +1,7 @@
 function match() {
-    wt -w 0 -d "C:\dev\match" pwsh -NoExit -Command startMatch `; `
-        split-pane  -d "C:\dev\match" pwsh -NoExit -Command startMatchTests
-        # move-focus right `; `
-        # split-pane  -d "C:\dev\match" pwsh -NoExit -Command startMatchE2E  
+    wt -w 0 -d "C:\dev\match" pwsh  -Command startMatch -NoExit `; `
+        split-pane  -d "C:\dev\match\apps\match-e2e" pwsh -NoExit `; `
+         split-pane  -d "C:\dev\match" pwsh -NoExit  -Command git status
 
 }
 
@@ -19,7 +18,7 @@ function startMatchE2E() {
 }
 
 function startMatch() {
-    npm run start
+    pm run start
 }
 
 function startMatchTests() {
