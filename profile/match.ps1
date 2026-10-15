@@ -1,5 +1,5 @@
 function match() {
-    wt -w 0 -d "C:\dev\match" pwsh  -Command startMatch -NoExit `; `
+    wt -w 0 -d "C:\dev\match" pwsh -NoExit -Command startMatch `; `
         split-pane  -d "C:\dev\match\apps\match-e2e" pwsh -NoExit `; `
          split-pane  -d "C:\dev\match" pwsh -NoExit  -Command git status
 

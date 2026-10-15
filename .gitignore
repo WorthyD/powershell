@@ -2,3 +2,7 @@
 _variables.ps1
 Modules/*
 backup/*
+
+
+Invoke-MatchE2ESpec.ps1
+**/projects.json
